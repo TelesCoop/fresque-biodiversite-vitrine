@@ -1,0 +1,439 @@
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'open_sans';
+    src: url('OpenSans-Bold.ttf') format('truetype'),
+}
+
+*
+{
+    font-family: 'Arial';
+}
+
+#page1
+{
+    height: 856px;
+    width: 100vw;
+    background: #FFFDFB 0% 0% no-repeat padding-box;
+    position: relative;
+}
+
+#topsection
+{   
+    margin-top: 0px;
+    height: 125px;
+	background-color: #FCF5EB;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bandeauTitre
+{
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header
+{
+    max-width: 200px ;
+    display: flex;
+}
+nav {	
+    max-width: 600px;
+	text-align: left;
+	display: block;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-grow: 1;
+    justify-content: center;
+    font-family: 'Arial Bold';
+    font-size: 18px;
+    color: #2D2208;
+    align-items: center;
+    font: normal normal bold 18px/21px Arial;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.rectangleNav
+{
+    border: 2px solid #F4D9B4;
+    opacity: 1;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#menu
+{   
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlink
+{
+    color: #2D2208 !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section1
+{	
+    background: #FFFDFB;
+    display: flex;
+	word-wrap: break-word;
+	max-width: 100%;
+    justify-content: space-around;
+    height: 85.39%;
+}
+
+.chacheTaille
+{
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article1
+{   
+    justify-content: center;
+    max-width: 40%;
+    font-size: 20px;
+    height: 580px;
+    text-align: left;
+    font-family: 'Arial';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titre1
+{
+    font-family: 'arial black ';
+    margin-bottom: 0px;
+    color: #402121;
+    height: 137px;
+    font-size: 60px;
+	font-weight: normal;
+}
+
+.participe
+{
+    display: inline-block;
+    width: 241px;
+    height: 73px;
+    text-decoration: none;
+    background-color: #E56B06;
+    border-radius: 4px;
+    color: #FFFDFB;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img {
+    width: 50%;
+ }
+img.superpose {
+    position: absolute;
+    right: 0px;
+}
+ #img1 {
+    width: 29vw;
+    bottom: 23vw;
+ }
+ #img2 {
+    width: 50vw;
+    bottom: 0;
+ }
+#participe
+{
+    background-color: #E56B06;
+}
+p
+{
+	text-align: justify;
+	width: 80%;
+	justify-content: center;
+}
+
+
+                    /*  */
+/*  ********    DEBUT PAGE 2  ********** */
+                    /*  */
+.page2
+{
+    height: 831px;
+    width: 100vw;
+    background: #FFFBF6 0% 0% no-repeat padding-box;
+    position: relative;
+}
+
+.page2 .topMargin
+{
+    margin-top: 150px;
+}
+
+
+.page2 .header p
+{
+    margin-top: 130px;
+	max-width: 50%;
+	text-align: center;
+	margin: 0 auto;
+    color: #402121;
+    font-size: 40px;
+}
+
+.rectangle
+{
+    background-color: #F97910;
+    font-size: 5px;
+    width: 10%;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #F97910;
+    margin-top: 30px;
+}
+
+.page2 p
+{
+    color: #402121;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+
+.page2 .tauxExt 
+{
+    max-width: 70%;
+    font: italic normal bold 24px/36px Arial;
+    color: #402121;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.page2 .text
+{
+    max-width: 60%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+.arbreLeft
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.arbreOmbre
+{
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    z-index: 1;
+    right: 0px;
+    width: 20%;
+}
+
+
+
+.bottomBord
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    background: #F4D9B4 0% 0% no-repeat padding-box;
+    height: 9px;
+}
+
+
+                    /*  */
+/*  ********    DEBUT PAGE 3  ********** */
+                    /*  */
+                    
+.page3
+{
+    height: 1171px;
+    width: 100vw;
+    background: #FFFBF6 0% 0% no-repeat padding-box;
+}
+
+.page3 .header
+{
+    display: flex;
+    height: 300px;
+    font-family: 'Arial';
+    font-size: 40px;
+    color: #402121;
+    align-items:center ;
+    justify-content: space-around;
+
+}
+
+.page3 .header .titre{
+    max-width: 50%;
+}
+
+.page3 .header .img
+{
+    max-width: 22%;
+}
+
+.page3 .header .rectangle
+{
+    background: #F97910 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    height: 9px;
+    width: 10%;
+    margin-left: 0px;
+}
+
+/* On passe au middle */
+
+.middle
+{
+    height: 370px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle .chacheTaille
+{
+    flex-direction: column;
+}
+
+
+.middle table thead th
+{
+    width: 25%;
+    margin-right: 15px;
+    font: normal normal bold 80px/44px 'Arial';
+    color: #F4D9B4;
+    text-align: left;
+
+}
+
+.middle table tbody td 
+{
+    font: normal normal bold 24px/36px Arial;
+    color: #402121;
+    text-align: left;
+}
+
+.middle table tfoot td 
+{
+    text-align: left;
+    font: normal normal normal 18px/27px Arial;
+    color: #402121;
+
+}
+
+.middle table td,th
+{
+    padding: 0em;
+}
+
+
+/* TABLEAU DU BAS */
+
+.bottomTable
+{
+    background: #402121 0% 0% no-repeat padding-box;
+    width: 12vw;
+    border-radius: 4px;
+}
+.botTable
+{
+    background: #402121 0% 0% no-repeat padding-box;
+    color: #FCF5EB;
+    border-radius: 4px;
+    height: 416px;
+    height: 30vh;
+    width: 60vw;
+    margin-left: 10vw;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.botTable .img
+{
+    margin-top: 3vw;
+}
+
+.botTable .titres
+{
+    font: normal normal bold 24px/36px Arial;
+}
+
+.botTable td
+{
+    font: normal normal normal 18px/27px Arial;   
+}
+
+
+/* PAGE 4 */
+
+.page4
+{
+    background: #FFFBF6 0% 0% no-repeat padding-box;
+    height: 100vw;
+}
+
+/* HEADER */
+
+.page4 .header
+{
+    display: flex;
+    height: 300px;
+    font-family: 'Arial';
+    font-size: 40px;
+    color: #402121;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page4 .header .titre
+{
+    max-width: 300px;
+}
+
+.page4 .header .rectangle
+{
+    background: #F97910 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    height: 9px;
+    width: 5vw;
+    margin-left: 0px;
+}
+
+.page4 .header .article 
+{
+    width: 720px;
+}
+
+.page4 .header .article .titreDroite
+{
+    color: #402121;
+    font: normal normal bold 24px/36px Arial;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.page4 .header .sous_titre
+{
+    font: normal normal normal 18px/36px Arial;
+    text-align: left;
+    color: #402121;
+
+}

@@ -1,0 +1,207 @@
+*
+{
+    font-family: 'Arial';
+    color: #402121;
+}
+/* MARCHE PAS CA */
+
+
+.has-background-beige
+{
+    background-color: #FFFDFB;
+}
+
+#img {
+    width: 50%;
+ }
+img.overlay {
+    position: absolute;
+    right: 0px;
+}
+ #img1 {
+    width: 29vw;
+    bottom: 23vw;
+ }
+ #img2 {
+    width: 50vw;
+    bottom: 0;
+ }
+
+ .is-absolute
+ {
+     position: absolute;
+ }
+
+
+            /* *************** */
+                /* PAGE 2   */
+                /* ************** */
+
+
+.has-background-clay
+{
+    background: #FFFBF6 ;
+
+}
+
+.has-background-light-brown
+{
+    background: #F4D9B4;
+}
+
+ .separator 
+ {  
+     height: 9px;
+     width: 58px;
+     border-radius: 5px;
+    
+ }
+
+ .separator.is-centered
+ {
+     margin:auto;
+ }
+ 
+.separator.is-relative
+{
+    bottom: 0;
+}
+.arbreLeft
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.arbreOmbre
+{
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    z-index: 1;
+    right: 0px;
+    width: 20%;
+}
+
+
+
+
+
+            /* *************** */
+                /* PAGE 3   */
+                /* ************** */
+
+
+
+
+
+.steps thead th
+{
+    width: 25%;
+    margin-right: 15px;
+    font: normal normal 80px/44px 'Arial';
+    color: #F4D9B4;
+    text-align: left;
+
+}
+
+.steps tbody td 
+{
+    font: normal normal 24px/36px Arial;
+
+}
+
+.steps tfoot td 
+{
+    text-align: left;
+    font: normal normal normal 18px/27px Arial;
+    color: #402121;
+
+}
+
+.steps td,th
+{
+    padding: 0em;
+}
+
+.rules
+{
+    background: #402121 0% 0% no-repeat padding-box;
+    width: 12vw;
+    border-radius: 4px;
+}
+
+.rules thead th
+{
+    width: 25%;
+}
+.rulesTable
+{
+    background: #402121 0% 0% no-repeat padding-box;
+    color: #FCF5EB;
+    border-radius: 4px;
+    height: 416px;
+    height: 30vh;
+    width: 60vw;
+    margin-left: 10vw;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.rulesTable .img
+{
+    margin-top: 3vw;
+}
+
+.rulesTable .titres
+{
+    font: normal normal bold 24px/36px Arial;
+}
+
+.rulesTable td
+{
+    font: normal normal normal 18px/27px Arial;   
+}
+
+
+.is-underlined
+{
+    text-decoration: underline;
+}
+
+.has-background-semi-dark
+{
+    background-color: #2D2208;
+}
+
+.has-text-beige.is-underlined
+{
+    color: #FFFBF6;
+    text-decoration: underline;
+
+}
+
+.has-text-beige 
+{
+    color: #FFFBF6;
+}
+
+.separator.is-slim
+{
+    height:5px ;
+}
+
+.is-flipped-vertically
+{
+    transform: scaleX(-1);
+}
+
+.has-background-dark-beige
+{
+    background-color: #FCF5EB;
+}
+
+.is-orange
+{
+    color: #E56B06;
+}

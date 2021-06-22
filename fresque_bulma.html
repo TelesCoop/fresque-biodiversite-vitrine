@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="bulma_style.css" >
     <link rel="stylesheet" href="bulma-timeline.css">
+    <link rel="stylesheet" href="style.css">
     <title>Fresque bio</title>
   </head>
   <body>      
       <div class="has-background-dark-beige is-fullwidth ">
         <!-- PAS full width et mx-0 ne marche pas -->
-          <nav class="navbar  is-max-desktop has-background-dark-beige" style="width: 1080px; margin: auto;">
+          <nav class="navbar  is-max-desktop has-background-dark-beige" style="max-width: 1080px; margin: auto;">
               <div class="navbar-brand ">
                 <a href="" class="navbar-item">
                     <img src="Images/logoCouleurs.svg" alt="LogoTitre" style="min-height: 3.25rem;">
@@ -25,12 +26,17 @@
               </div>
             </div>    
               
-              <div class="navbar-end navbar-menu has-dropdown is-hoverable">
+              <div class="navbar-end navbar-menu has-dropdown is-hoverable has-text-weight-bold is-flex-direction-column" style="color: #2D2208;" >
+                <span class="is-flex is-justify-content-flex-end">
                 <a href="#atelier" class="navbar-item">L'atelier</a>
                 <a href="#participer" class="navbar-item">Comment participer ?</a>
                 <a href="#equipe" class="navbar-item">L'équipe</a>
                 <a href="#animateur" class="navbar-item">Devenir animateur</a>
-             
+              </span>
+              <div class="separator has-background-strong-beige is-slim is-centered mt-0 mr-3" style="width: 55%;"></div>
+              </div>
+              
+
               </div>
             </nav>
       </div>      
@@ -39,10 +45,10 @@
         <div class="section p-0 is-relative has-background-beige">          
             <div class="section is-flex-direction-column" style="max-width: 500px; padding: 150px 0px; margin-left:10vw;">
 
-                <h2 class="subtitle is-2 "> La Fresque de la <span class="has-text-weight-bold">Biodiversité</span></h2>
-                <h6 class="subtitle is-6 py-4 is-relative" style="z-index: 10;"> Découvrez au travers d'<span class="has-text-weight-bold">un atelier ludique et collaboratif </span>l'aspect systémique de l'érosion de la biodiversité : la sixième extinction de masse en cours.</h6>
+                <h2 class="subtitle is-1 "> La Fresque de la <span class="has-text-weight-bold">Biodiversité</span></h2>
+                <h6 class="subtitle is-4 py-4 is-relative" style="z-index: 10;"> Découvrez au travers d'<span class="has-text-weight-bold">un atelier ludique et collaboratif </span>l'aspect systémique de l'érosion de la biodiversité : la sixième extinction de masse en cours.</h6>
                 <!-- <a href="#participe" class="participe"> Je participe</a> -->
-                <button class="button is-primary is-medium">Je participe !</button>
+                <button class="button is-primary is-medium has-text-weight-bold">Je participe !</button>
 
            </div>
            <img id="img2" class="overlay" src="Images/fresque.svg" alt="Fresque">
@@ -57,7 +63,7 @@
           <!-- <div class="topMargin"></div> -->
           <img class="arbreLeft is-absolute" src="Images/arbreVaguesOmbre.svg" alt="arbreLeft" style="width: 44vw;">
           <img class="arbreOmbre is-absolute" src="Images/arbreOmbre.svg" alt="arbreOmbre" srtyle="width:12vw;">
-          <div class="separator has-background-primary is-absolute" style="width:100%; left: 0; bottom: 0px; right: 0;"></div>
+          <div class="separator is-absolute has-no-border-radius has-background-strong-beige" style=" width:100%; left: 0; bottom: 0px; right: 0;"></div>
 
               <h1 class="title is-2" style="max-width: 500px; margin: auto;">
   
@@ -79,8 +85,8 @@
   
   
   
-        <div class="section is-flex has-background-beige" style="justify-content: space-around;">
-            <div class="hero-head is-flex is-8" style="max-width:600px;">
+        <div class="section columns has-background-beige" style="justify-content: space-around;">
+            <div class="column is-flex is-8" style="max-width:600px;">
               <h1 class="title is-1 ml-4">
                 <span>
                 <span class="has-text-weight-bold">Comment se déroule</span> une fresque de la biodiversité ?
@@ -89,26 +95,27 @@
                 </span>
               </h1>
             </div>
-              
-            <img class="img" src="Images/cartesFresque.svg" alt="cartesFresque">
+            <div class="column is-4">
+              <img class="img" src="Images/cartesFresque.svg" alt="cartesFresque">
+            </div>
         </div>
   
-              <div class="container mb-6 ml-4">
+              <div class="container mb-6 ml-4 is-hidden-mobile">
                 <table class="steps">
                     <thead>
                         <tr>
-                            <th class="numero">1.</th>
-                            <th class="numero">2.</th>
-                            <th class="numero">3.</th>
-                            <th class="numero">4.</th>
+                            <th class="numbersteps">1.</th>
+                            <th class="numbersteps">2.</th>
+                            <th class="numbersteps">3.</th>
+                            <th class="numbersteps">4.</th>
                          </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="has-text-weight-bold py-5 pr-2">"Apéro" avec 3 écosystèmes</td>
-                            <td class="py-5 pr-2"><span class="has-text-weight-bold" >les 45 cartes du jeu</span> (1h)</td>
-                            <td class="py-5"><span class="has-text-weight-bold" >Faire de votre Fresque une oeuvre d'art </span>(10min)</td>
-                            <td class="py-5"><span class="has-text-weight-bold" >Débrief et plan d'action selon vos objectifs </span>(30min)</td>
+                            <td class="py-5 pr-2"><span class="has-text-weight-bold" >les 45 cartes du jeu</span> <span class="subtitle is-5">(1h)</span></td>
+                            <td class="py-5"><span class="has-text-weight-bold" >Faire de votre Fresque une oeuvre d'art </span><span class="subtitle is-5">(10min)</span></td>
+                            <td class="py-5"><span class="has-text-weight-bold" >Débrief et plan d'action selon vos objectifs </span><span class="subtitle is-5">(30min)</span></td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -122,8 +129,29 @@
                     </tfoot>
                 </table>
               </div>
+
+              <div class="steps is-hidden-tablet px-6">
+                <div class="numbersteps mt-6">1.</div>
+                <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle ">"Apéro" avec 3 écosystèmes</div>
+                <div>Comprendre un écosystème à l'équilibre perturbé par des activités humaines puis en découvrir les conséquences.</div>                      
+
+            
+                <div class="numbersteps mt-6">2.</div>
+                <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle ">les 45 cartes du jeu</span> <span class="subtitle is-5">(1h)</span></div>
+                <div>Distribuées en 5 lots, les participants répartis par équipe de 5-7 doivent retrouver les liens entre les 45 cartes pour comprendre les enjeux autour de l'effondrement de la biodiversité.</div>                      
+
+            
+                <div class="numbersteps mt-6">3.</div>
+                <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle ">Faire de votre Fresque une oeuvre d'art </span><span class="subtitle is-5">(10min)</span></div>
+                <div>Les participants doivent décorer & adapter leur Fresque à leur contexte vis-à-vis de la biodiversité afin de restituer leur travail devant les autres équipes.</div>                      
+
+            
+                <div class="numbersteps mt-6">4.</div>
+                <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle ">Débrief et plan d'action selon vos objectifs </span><span class="subtitle is-5">(30min)</span></div>
+                <div>Selon l'objectif de la séance, un débrief sur les apprentissages vise à élaborer un plan d'action en réfléchissant de manière collaborative aux solutions pour agir face à l'érosion de la biodiversité.</div>                      
+              </div>
   
-          <div class="rules mt-5">
+          <div class="rules mt-5 is is-hidden-mobile">
               <table class="rulesTable">
                 <thead>
                   <tr>
@@ -170,11 +198,37 @@
                   </tr>
                 </tbody>
               </table>
-        </div>
-        </div>
+          </div>
+
+          <div class="section has-background-light-brown pl-6 mt-5 is-hidden-tablet">
+            <img src="Images/pictoWall-clock.svg">
+            <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle has-text-beige">3 heures d'atelier</div>
+            <div class="has-text-beige"> 
+              • 20 minutes : comprendre un écosystème. <br>
+              • 1 heure : 5 lots pour 45 cartes. <br>
+              • 40 minutes : créativité + restitution. <br>
+              • 1 heure : débrief de l'atelier
+            </div>
+
+            <img src="Images/pictoPeople.svg " class="mt-5">
+            <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle has-text-beige">Participants illimités</div>
+            <div class="has-text-beige"> 
+              • Par groupe de 5 à 7 personnes. <br>
+              • 1 animateur expert pour 2 groupes
+            </div>
+
+            <img src="Images/pictoPuzzle.svg " class="mt-5">
+            <div class="has-text-weight-bold is-4 mb-0 py-2 subtitle has-text-beige">5 modules</div>
+            <div class="has-text-beige"> 
+              • Les services écosystémiques rendus <br>
+              • L'impact de l'Homme. <br>
+              • Les 5 grandes pressions. <br>
+              • Les conséquences.
+            </div>
+          </div>       
   
         
-        <div class="columns is-flex mt-6" style="justify-content: space-around;">
+        <div class="columns mt-6" style="justify-content: space-around;">
           <div class="column is-3" style="max-width:300px;">
             <h1 class="title is-1 ml-4">
               <span>
@@ -185,7 +239,7 @@
             </h1>
           </div>
             
-          <div class="column is-7">
+          <div class="column is-7 mt-4 ml-4">
             <h3 class="subtitle is-4 has-text-weight-bold mb-0 ">
               Voici le planning des prochaines sessions publiques, destinées avant tout au grand public. 
             </h3>
@@ -242,27 +296,28 @@
 
         <div class="columns is-flex is-justify-content-flex-end is-relative" style="margin-top: 100px;">
           <div class="column is-7 has-background-light-brown">
-            <h2 class="title is-3 py-5 ml-4">
-              Ils sont déjà <span class="has-text-weight-bold">plus de 5000 </span> à avoir participé !
+            <h2 class="title is-3 py-5 ml-4 has-text-light-beige">
+              Ils sont déjà <span class="has-text-weight-bold has-text-light-beige">plus de 5000 </span> à avoir participé !
             </h2>
           </div>
-          <img class="is-absolute" style="right: 0px; bottom: 45px;" src="Images/plante02.svg" alt="Plante02">
+          <img class="is-absolute" style="right: 0px; top: -40px; width: 20vw; min-width: 300px;" src="Images/plante02.svg" alt="Plante02">
         </div>
         
         <!-- LAST SECTION -->
 
         <div class="columns is-justify-content-center mt-6 has-background-beige" style="padding-bottom: 100px;">
-          <div class="column is-4 ml-4">
+          <div class="column is-6 ml-4">
             <h1 class="title is-2"><span class="has-text-weight-bold"> Les auteurs</span> de l'atelier</h1>
             <div class="separator has-background-primary mt-2">
             </div>
-            <div class="culumns is-12 is-flex mt-6">
-              <div class="column is-6">
-                <figure class="image" style="width: 180px; height: 160px;">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" style="border-radius: 4px;">
-                  <div class="rectangle is-absolute">
+            <div class="culumns is-12 is-flex mt-6 is-flex-direction-column-mobile">
+              <div class="column is-6 has-max-width">
+                <figure class="image is-relative" style="width: 180px; height: 160px;">
+                  <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
 
                   </div>
+                  <img width="160px" height="180px" src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
+                  
                 </figure>
                 
                 <span class='is-flex mt-4'>
@@ -275,12 +330,15 @@
                 <h1 class="subtitle is-6 is-italic">
                   " Nous n'héritons pas de la terre de nos parents, nous l'empruntons à nos enfants. "
                 </h1> 
-                <h1 class="subtitle is-6 has-text-weight-bold is-justify-content-right">
+                <h1 class="subtitle is-6 has-text-weight-bold is-justify-content-right has-text-right">
                   Antoine de Saint-Exupéry
                 </h1>
 
-                <figure class="image" style="width: 180px; height: 160px;">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" style="border-radius: 4px;">
+                <figure class="image is-relative" style="width: 180px; height: 160px;">
+                  <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
+
+                  </div>
+                  <img src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
                 </figure>
                 <span class='is-flex mt-4'>
                   <h1 class="title is-5 has-text-weight-bold py-4">
@@ -292,15 +350,18 @@
                 <h1 class="subtitle is-6 is-italic">
                   " Lorem ipsum dolor sit amet, conur adipiscing elit. Phasellus nec iaculis mauris. "
                 </h1> 
-                <h1 class="subtitle is-6 has-text-weight-bold is-justify-content-right">
+                <h1 class="subtitle is-6 has-text-weight-bold is-justify-content-right has-text-right">
                   Mr Lorem Ipsum
                 </h1>
               </div>
 
 
-              <div class="column is-6">
-                <figure class="image" style="width: 180px; height: 160px;">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" style="border-radius: 4px;">
+              <div class="column is-6 has-max-width">
+                <figure class="image is-relative" style="width: 180px; height: 160px;">
+                  <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
+
+                  </div>
+                  <img src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
                 </figure>
                 <span class='is-flex mt-4'>
                   <h1 class="title is-5 has-text-weight-bold py-4">
@@ -311,12 +372,15 @@
                 <h1 class="subtitle is-6 is-italic">
                   " Nous n'héritons pas de la terre de nos parents, nous l'empruntons à nos enfants. "
                 </h1> 
-                <h1 class="subtitle is-6 has-text-weight-bold is-justify-content-right">
+                <h1 class="subtitle is-6 has-text-weight-bold has-text-right">
                   Antoine de Saint-Exupéry
                 </h1>
 
-                <figure class="image" style="width: 180px; height: 160px;">
-                  <img src="Images/logoDeloitte.svg" style="border-radius: 4px;">
+                <figure class="image is-relative" style="width: 180px; height: 160px;">
+                  <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
+
+                  </div>
+                  <img src="Images/logoDeloitte.svg" class="is-relative" style="border-radius: 4px;">
                 </figure>
                 <span class='is-flex mt-4'>
                   <h1 class="title is-5 has-text-weight-bold py-4">
@@ -327,7 +391,7 @@
                 <h1 class="subtitle is-6 is-italic">
                   " Lorem ipsum dolor sit amet, conur adipiscing elit. Phasellus nec iaculis mauris. "
                 </h1> 
-                <h1 class="subtitle is-6 has-text-weight-bold is-justify-content-right">
+                <h1 class="subtitle is-6 has-text-weight-bold has-text-right">
                   Mr Lorem Ipsum
                 </h1>
               </div>
@@ -355,13 +419,13 @@
 
 
 
-          <div class="column is-4 ml-4">
+          <div class="column is-4 ml-4 is-hidden-mobile">
             <h1 class="title is-2">
               <span class="has-text-weight-bold" style="max-width: 250px;">Les étapes</span> du projet
             </h1>
             <div class="separator has-background-primary mt-2">
             </div>
-            <div class="timeline mt-6">
+            <div class="timeline fresque-timeline mt-6">
               <header class="timeline-header">
                 <span class="tag is-medium has-background-dark-beige" style="background-color: #FCF5EB;">2019</span>
               </header>
@@ -467,7 +531,7 @@
           </div>
         </div>
 
-        <div class="columns has-background-semi-dark is-justify-content-center pb-6  my-0 is-relative" style="padding-top: 100px;">
+        <div class="columns has-background-semi-dark is-justify-content-center pb-6  my-0 is-relative has-text-beige" style="padding-top: 100px;">
           <div class="column is-4 ml-4">
             <img src="Images/logoBlanc.svg">
             <h1 class="subtitle is-6 has-text-beige pt-4">
@@ -489,21 +553,21 @@
             <div class="separator is-slim has-background-primary">
             </div>
 
-            <h1 class="subtitle is-6 has-text-beige mt-6">
-              <span class="has-text-weight-bold"> ressources sont précieuses, et votre temps aussi.</span>
-              Cette page pèse <span class="has-text-weight-bold"></span>XX Ko</span> et a demandé <span class="has-text-weight-bold">XX requêtes.</span> 
+            <h1 class="subtitle is-6 has-text-beige mt-6 ">
+              <span class="has-text-weight-bold has-text-beige"> ressources sont précieuses, et votre temps aussi.</span>
+              Cette page pèse <span class="has-text-weight-bold has-text-beige">XX Ko</span> et a demandé <span class="has-text-weight-bold has-text-beige">XX requêtes.</span> 
               Une page web en moyenne dépasse les 2000 Ko et demande 70 requêtes. 
               
               <br>
               <br>
-              Envie de connaître l’impact environnemental de votre site web ? Allez voir sur <a href="exoindex.fr" class="is-underlined">ecoindex.fr</a>.
+              Envie de connaître l’impact environnemental de votre site web ? Allez voir sur <a href="exoindex.fr" class="is-underlined has-text-beige">ecoindex.fr</a>.
             </h1>
           </div>
           <img src="Images/plante02.svg" class="is-absolute is-flipped-vertically" style="left: 0px; top: -30px;">
         </div>
 
-        <div class="columns has-background-dark-beige is-flex pt-5 pb-4" style="padding-left: 13%;">
-          <div class="column is-3">
+        <div class="columns has-background-dark-beige pt-5 pb-4" style="padding-left: 13%;">
+          <div class="column is-3" style="min-width: 225px;">
           <h1 class="title is-5 has-text-weight-bold">
             Retrouvez nous sur :
           </h1>
@@ -521,3 +585,5 @@
     </body>
   </html>
   
+
+ 

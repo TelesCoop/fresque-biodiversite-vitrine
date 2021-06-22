@@ -95,14 +95,20 @@ img.overlay {
 
 
 
-.steps thead th
+.numbersteps
 {
     width: 25%;
     margin-right: 15px;
-    font: normal normal 80px/44px 'Arial';
+    font-size: 80px;
     color: #F4D9B4;
     text-align: left;
+    line-height: 0.8em;
 
+}
+
+.steps th
+{
+    width: 25%;
 }
 
 .steps tbody td 
@@ -205,3 +211,72 @@ img.overlay {
 {
     color: #E56B06;
 }
+
+
+.timeline.fresque-timeline .timeline-item .timeline-marker.is-image {
+    background:none; 
+    border: none; 
+    overflow: visible; 
+}
+
+.has-text-beige
+{
+    color: #FFFBF6;
+}
+
+.subtitle.has-text-beige
+{
+    color: #FFFBF6;
+}
+
+.title.has-text-beige
+{
+    color: #FFFBF6 !important;
+
+}
+
+
+
+.has-background-dark-beige
+{
+    background-color: #FCF5EB !important; 
+}
+
+.has-no-border-radius
+{
+    border-radius: 0px;
+}
+
+.has-background-light-brown
+{
+    background-color: #402121;
+}
+
+.has-text-light-beige
+{
+    color: #FFFDFB !important;
+}
+
+.rectangle
+{
+    width: 180px;
+    height: 180px;
+    background-color: #F4D9B4;
+}
+
+.has-background-strong-beige
+{
+    background-color: #F4D9B4 !important;
+}
+
+@media (max-width: 768px) {
+    .is-flex-direction-column-mobile
+    {
+        flex-direction: column;
+    }
+
+    .has-max-width 
+    {
+        max-width: 300px;
+    }
+  }

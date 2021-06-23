@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bulma_style.css">
   <link rel="stylesheet" href="bulma-timeline.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bulma.custom.css">
   <title>Fresque bio</title>
 </head>
 
@@ -18,7 +18,43 @@
           <img src="Images/logoCouleurs.svg" alt="LogoTitre" style="min-height: 3.25rem;">
         </a>
 
-        <div class="navbar-burger" aria-label="menu" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger is-hoverable" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <span class="is-flex has-text-weight-bold" style="color: #2D2208;">
+          <a class="navbar-item">
+            L'atelier
+          </a>
+    
+          <a class="navbar-item">
+            Comment participer ?
+          </a>
+  
+          <a class="navbar-item">
+            L'équipe
+          </a>
+  
+          <a class="navbar-item">
+            Devenir animateur
+          </a>
+        </span>
+        <div class="has-background-strong-beige is-absolute has-4px-height mr-3 mt separator is-hidden-mobile is-hidden-tablet-only" style="width: 46.5%;top: 50px;"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+
+
+        <!-- <div class="navbar-burger" aria-label="menu" data-target="navbarBasicExample">
           <span></span>
           <span></span>
           <span></span>
@@ -34,7 +70,7 @@
           <a href="#animateur" class="navbar-item">Devenir animateur</a>
         </span>
         <div class="separator has-background-strong-beige is-slim is-centered mt-0 mr-3" style="width: 55%;"></div>
-      </div>
+      </div> -->
 
 
   </div>
@@ -261,49 +297,25 @@
     </div>
   </div>
 
-  <div class="box">
-    <article class="media">
-      <div class="media-left">
-        <figure class="image is-64x64">
-          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas.
-            Nullam condimentum luctus turpis.
-          </p>
-        </div>
-        <nav class="level is-mobile">
-          <div class="level-left">
-            <a class="level-item" aria-label="reply">
-              <span class="icon is-small">
-                <i class="fas fa-reply" aria-hidden="true"></i>
-              </span>
-            </a>
-            <a class="level-item" aria-label="retweet">
-              <span class="icon is-small">
-                <i class="fas fa-retweet" aria-hidden="true"></i>
-              </span>
-            </a>
-            <a class="level-item" aria-label="like">
-              <span class="icon is-small">
-                <i class="fas fa-heart" aria-hidden="true"></i>
-              </span>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </article>
-  </div>
 
-  <div class="columns is-justify-content-center pt-6">
+  <div class="columns is-justify-content-center is-flex is-flex-direction-column-mobile pt-6">
     <div class="column is-3">
-      <div class="div box">
+      <div class="div box mx-mobile">
         <h4 class="title is-4">
+          <span class="has-text-weight-bold ">Mercredi 3 Février</span> 18h
+        </h4>
+        <h6 class="subtitle is-6 py-5 mb-1">
+          <span class="has-text-weight-bold">• Animateurs : </span>Marie Vanbremeersch Fannie Le Floch, Bruno Colladant
+          </br>
+          <span class="has-text-weight-bold">• Lieu : </span>en ligne </br>
+          • Toutes les infos techniques seront envoyées par email aux inscrits.
+        </h6>
+        <button class="button is-primary is-medium">Je m'inscris</button>
+      </div>
+    </div>
+    <div class="column is-3">
+      <div class="div box mx-mobile my-mobile">
+        <h4 class="title is-4 my-mobile">
           <span class="has-text-weight-bold">Mercredi 3 Février</span> 18h
         </h4>
         <h6 class="subtitle is-6 py-5 mb-1">
@@ -316,23 +328,9 @@
       </div>
     </div>
     <div class="column is-3">
-      <div class="div box">
+      <div class="div box mx-mobile">
         <h4 class="title is-4">
-          <span class="has-text-weight-bold">Mercredi 3 Février</span> 18h
-        </h4>
-        <h6 class="subtitle is-6 py-5 mb-1">
-          <span class="has-text-weight-bold">• Animateurs : </span>Marie Vanbremeersch Fannie Le Floch, Bruno Colladant
-          </br>
-          <span class="has-text-weight-bold">• Lieu : </span>en ligne </br>
-          • Toutes les infos techniques seront envoyées par email aux inscrits.
-        </h6>
-        <button class="button is-primary is-medium">Je m'inscris</button>
-      </div>
-    </div>
-    <div class="column is-3">
-      <div class="div box">
-        <h4 class="title is-4">
-          <span class="has-text-weight-bold">Mercredi 3 Février</span> 18h
+          <span class="has-text-weight-bold ">Mercredi 3 Février</span> 18h
         </h4>
         <h6 class="subtitle is-6 py-5 mb-1">
           <span class="has-text-weight-bold">• Animateurs : </span>Marie Vanbremeersch Fannie Le Floch, Bruno Colladant
@@ -361,12 +359,12 @@
       <div class="separator has-background-primary mt-2">
       </div>
       <div class="culumns is-12 is-flex mt-6 is-flex-direction-column-mobile">
-        <div class="column is-6 has-max-width">
+        <div class="column is-6 has-max-width mx-mobile">
           <figure class="image is-relative" style="width: 180px; height: 160px;">
             <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
 
             </div>
-            <img width="160px" height="180px" src="https://bulma.io/images/placeholders/128x128.png" class="is-relative"
+            <img width="180px"  src="https://bulma.io/images/placeholders/128x128.png" class="is-relative"
               style="border-radius: 4px;">
 
           </figure>
@@ -389,7 +387,7 @@
             <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
 
             </div>
-            <img src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
+            <img width="180px" src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
           </figure>
           <span class='is-flex mt-4'>
             <h1 class="title is-5 has-text-weight-bold py-4">
@@ -406,12 +404,12 @@
           </h1>
         </div>
 
-        <div class="column is-6 has-max-width">
+        <div class="column is-6 has-max-width mx-mobile mt-mobile">
           <figure class="image is-relative" style="width: 180px; height: 160px;">
             <div class="rectangle is-absolute" style="top: -10px; left: -10px; border-radius: 5px;">
 
             </div>
-            <img src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
+            <img width="180px" src="https://bulma.io/images/placeholders/128x128.png" class="is-relative" style="border-radius: 4px;">
           </figure>
           <span class='is-flex mt-4'>
             <h1 class="title is-5 has-text-weight-bold py-4">
@@ -626,3 +624,31 @@
 </body>
 
 </html>
+
+<script type="text/javascript" >
+document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>

@@ -260,13 +260,18 @@ img.overlay {
 .rectangle
 {
     width: 180px;
-    height: 180px;
+    height: 160px;
     background-color: #F4D9B4;
 }
 
 .has-background-strong-beige
 {
     background-color: #F4D9B4 !important;
+}
+
+.has-4px-height
+{
+    height: 4px;
 }
 
 @media (max-width: 768px) {
@@ -279,4 +284,27 @@ img.overlay {
     {
         max-width: 300px;
     }
+
+    .mx-mobile
+    {
+        margin-right:1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .my-mobile
+    {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .mt-mobile
+    {
+        margin-top: 1.5rem;
+    }
+
+    .mb-mobile
+    {
+        margin-bottom: 1.5rem;
+    }
+
   }

@@ -274,6 +274,11 @@ img.overlay {
     height: 4px;
 }
 
+.has-text-classic-dark
+{
+    color: #402121 !important;
+}
+
 @media (max-width: 768px) {
     .is-flex-direction-column-mobile
     {

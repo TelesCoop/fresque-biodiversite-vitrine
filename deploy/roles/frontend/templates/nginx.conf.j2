@@ -1,0 +1,16 @@
+{{ ansible_managed | comment }}
+
+server {
+
+    listen 80;
+
+    server_name {{ " ".join(public_hostnames) }};
+
+    access_log /var/log/nginx/access_{{ public_hostnames[0].replace('.', '_') }}.log;
+    error_log /var/log/nginx/error_{{ public_hostnames[0].replace('.', '_') }}.log;
+
+    location / {
+        try_files $uri /index.html =404;
+        root {{ frontend_static_path }};
+    }
+}

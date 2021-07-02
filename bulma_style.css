@@ -323,6 +323,7 @@ img.overlay {
 
 
 @media (max-width: 768px) {
+    
     .is-flex-direction-column-mobile
     {
         flex-direction: column;
@@ -355,4 +356,10 @@ img.overlay {
         margin-bottom: 1.5rem;
     }
 
-  }
+}
+
+@media (max-width: 1023px) {
+    .navbar-end .navbar-item.is-tab{
+    border-bottom: 0 !important;
+    }
+}

@@ -3,8 +3,27 @@
     font-family: 'Arial';
     color: #402121;
 }
-/* MARCHE PAS CA */
 
+.has-underlined-nav-item{
+    height: 40px;
+    margin: auto;
+    padding-bottom: 8px;
+    border-bottom: 5px solid black;
+    border-color:#F4D9B4 ;
+}
+
+.navbar-end .navbar-item.is-tab{
+    border-bottom: 5px solid #F4D9B4 !important;
+    min-height: 2.25rem !important;
+    padding-bottom: calc(0.5rem - 1px) !important;
+}
+
+.navbar-end .navbar-item.is-tab:hover{
+    border-bottom: 7px solid #E56B06 !important;
+    min-height: 2rem !important;
+
+    color: #E56B06;
+}
 
 .has-background-beige
 {
@@ -21,6 +40,8 @@ img.overlay {
  #img1 {
     width: 29vw;
     bottom: 23vw;
+    z-index: 10;
+
  }
  #img2 {
     width: 50vw;
@@ -264,6 +285,12 @@ img.overlay {
     background-color: #F4D9B4;
 }
 
+.large-rectangle{
+    width: 360px;
+    height: 160px;
+    background-color: #F4D9B4;
+}
+
 .has-background-strong-beige
 {
     background-color: #F4D9B4 !important;
@@ -278,6 +305,22 @@ img.overlay {
 {
     color: #402121 !important;
 }
+
+.is-orange:hover{
+    color: #E56B06 !important;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.has-hovering:hover{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.has-text-beige.has-hovering:hover{
+    color: #FFFBF6;
+}
+
 
 @media (max-width: 768px) {
     .is-flex-direction-column-mobile

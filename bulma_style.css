@@ -356,6 +356,21 @@ img.overlay {
         margin-bottom: 1.5rem;
     }
 
+    .has-margin-auto-mobile
+    {
+        margin: auto;
+    }
+    .is-align-content-center-mobile{
+        align-items: center;
+    }
+    
+    .is-justify-content-center-mobile{
+        justify-content: center;
+    }
+
+    .has-text-align-center-mobile{
+        text-align: center;
+    }
 }
 
 @media (max-width: 1023px) {

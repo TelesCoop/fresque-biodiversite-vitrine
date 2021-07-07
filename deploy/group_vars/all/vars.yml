@@ -1,0 +1,11 @@
+---
+
+organization_slug: telescoop
+project_slug: fresque-biodiversite
+main_user: fresque_biodiversite
+main_user_uid: 1089  # must be unique for each project on the server
+public_hostnames:
+  - fresquedelabiodiversite.tlscp.fr
+  - fresquedelabiodiversite.org
+frontend_repo: git@gitlab.com:telescoop-public/fresque-biodiversite.git
+identity_file_path: /home/ubuntu/.ssh/id_rsa

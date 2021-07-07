@@ -1,0 +1,4 @@
+---
+
+frontend_path: /{{ organization_slug }}/{{ project_slug}}/frontend
+frontend_static_path: /{{ organization_slug }}/{{ project_slug}}/frontend_static

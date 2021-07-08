@@ -313,8 +313,8 @@ img.overlay {
 }
 
 .has-hovering:hover{
-    font-size: 1.1em;
-    font-weight: bold;
+    font-weight: none;
+    text-decoration: none !important;
 }
 
 .has-text-beige.has-hovering:hover{

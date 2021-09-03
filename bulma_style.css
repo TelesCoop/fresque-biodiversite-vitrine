@@ -70,19 +70,19 @@ img.overlay {
     background: #F4D9B4;
 }
 
- .separator 
- {  
+ .separator
+ {
      height: 9px;
      width: 58px;
      border-radius: 5px;
-    
+
  }
 
  .separator.is-centered
  {
      margin:auto;
  }
- 
+
 .separator.is-relative
 {
     bottom: 0;
@@ -105,17 +105,6 @@ img.overlay {
 }
 
 
-
-
-
-            /* *************** */
-                /* PAGE 3   */
-                /* ************** */
-
-
-
-
-
 .numbersteps
 {
     width: 25%;
@@ -132,13 +121,13 @@ img.overlay {
     width: 25%;
 }
 
-.steps tbody td 
+.steps tbody td
 {
     font: normal normal 24px/36px Arial;
 
 }
 
-.steps tfoot td 
+.steps tfoot td
 {
     text-align: left;
     font: normal normal normal 18px/27px Arial;
@@ -187,7 +176,7 @@ img.overlay {
 
 .rulesTable td
 {
-    font: normal normal normal 18px/27px Arial;   
+    font: normal normal normal 18px/27px Arial;
 }
 
 
@@ -208,7 +197,7 @@ img.overlay {
 
 }
 
-.has-text-beige 
+.has-text-beige
 {
     color: #FFFBF6;
 }
@@ -235,9 +224,9 @@ img.overlay {
 
 
 .timeline.fresque-timeline .timeline-item .timeline-marker.is-image {
-    background:none; 
-    border: none; 
-    overflow: visible; 
+    background:none;
+    border: none;
+    overflow: visible;
 }
 
 .has-text-beige
@@ -260,7 +249,7 @@ img.overlay {
 
 .has-background-dark-beige
 {
-    background-color: #FCF5EB !important; 
+    background-color: #FCF5EB !important;
 }
 
 .has-no-border-radius
@@ -321,15 +310,18 @@ img.overlay {
     color: #FFFBF6;
 }
 
+.figure-quote {
+    margin-bottom: 0 !important;
+}
 
 @media (max-width: 768px) {
-    
+
     .is-flex-direction-column-mobile
     {
         flex-direction: column;
     }
 
-    .has-max-width 
+    .has-max-width
     {
         max-width: 300px;
     }
@@ -363,7 +355,7 @@ img.overlay {
     .is-align-content-center-mobile{
         align-items: center;
     }
-    
+
     .is-justify-content-center-mobile{
         justify-content: center;
     }

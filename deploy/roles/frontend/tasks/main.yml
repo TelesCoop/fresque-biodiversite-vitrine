@@ -20,7 +20,6 @@
       mode: '2775'
     - path: "/etc/{{ organization_slug }}/{{ project_slug }}"
       mode: '2775'
-      mode: '2775'
     - path: "{{ frontend_path }}"
       mode: '2777'
   become: yes

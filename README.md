@@ -1,4 +1,4 @@
-# Site Frèsque de la biodiversité
+# Site Fresque de la biodiversité
 
 ## Comment lancer le projet en local
 
